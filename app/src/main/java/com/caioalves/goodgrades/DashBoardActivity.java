@@ -1,9 +1,13 @@
 package com.caioalves.goodgrades;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class DashBoardActivity extends ActionBarActivity {
@@ -12,6 +16,25 @@ public class DashBoardActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
+    }
+
+    public void selecionarFuncao(View view){
+        switch (view.getId()){
+            case R.id.novaMateriaButton:
+                startActivity(new Intent(this, MateriaActivity.class));
+                break;
+            case R.id.materiasButton:
+                Toast toast;
+                toast = Toast.makeText(this, "Minhas matérias", Toast.LENGTH_SHORT);
+                toast.show();
+                //startActivity(new Intent(this, MateriaActivity.class));
+                break;
+            case R.id.calculaNotaButton:
+                toast = Toast.makeText(this, "Calcular notas", Toast.LENGTH_SHORT);
+                toast.show();
+                //startActivity(new Intent(this, NotasActivity.class));
+                break;
+        }
     }
 
 

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Good Grades</string>
-
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="novaMateriaButton">Nova Matéria</string>
+    <string name="materiaButton">Minhas Matérias</string>
+    <string name="calculaNotaButton">Calcular Nota</string>
+    <string name="anotacoesButton">Anotações</string>
+    <string name="salvarMateriaButton">Arquivar</string>
+    <string name="materiaTextView">Matéria</string>
 </resources>
